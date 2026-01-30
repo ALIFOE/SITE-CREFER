@@ -2,7 +2,7 @@
   <div class="min-h-screen">
     <!-- Hero Section with configurable background image -->
     <section
-      class="relative min-h-screen text-white flex items-center overflow-hidden bg-cover bg-center"
+      class="relative min-h-screen text-white flex items-center overflow-hidden bg-cover bg-center transition-all duration-1000"
       :style="{ backgroundImage: `url(${backgroundImageUrl})` }"
       v-scroll-animate
     >
@@ -941,15 +941,32 @@ export default {
         keywords: 'formation électricité, énergie solaire, CAP, BT, école technique, Togo, énergies renouvelables, CREFER',
         canonical: 'https://crefer.tech'
       })
+      
+      // Lancer le diaporama - change l'image toutes les 5 secondes
+      const slideshowInterval = setInterval(() => {
+        currentSlideIndex.value = (currentSlideIndex.value + 1) % slideshowImages.value.length
+      }, 5000)
+      
+      // Sauvegarder l'intervalle pour le nettoyer plus tard
+      window.slideshowInterval = slideshowInterval
     })
 
     // Video URL - importée comme les images
     const videoUrl = ref(new URL('../assets/videos/video1.mp4', import.meta.url).href)
     // Image pour la section "Prêt à nous rejoindre ?"
     const joinUsImage = ref(new URL('../assets/images/_DSC4676-1200.jpg', import.meta.url).href)
+    
+    // Diaporama - Images pour le hero section
+    const slideshowImages = ref([
+      new URL('../assets/images/_DSC4881-1200.webp', import.meta.url).href,
+      new URL('../assets/images/hero1.jpg', import.meta.url).href,
+      new URL('../assets/images/exam4article.jpg', import.meta.url).href
+    ])
+    const currentSlideIndex = ref(0)
+    
     // Utilise des images locales placées dans `src/assets/images/`.
     // Remplacez les fichiers si nécessaire. Vite résout les chemins via `new URL(..., import.meta.url)`.
-    const backgroundImageUrl = ref(new URL('../assets/images/_DSC4859.jpg', import.meta.url).href)
+    const backgroundImageUrl = computed(() => slideshowImages.value[currentSlideIndex.value])
     const storyImageUrl = ref(new URL('../assets/images/histoire.jpg', import.meta.url).href)
     // Images pour les 3 cards "Programmes d'étude"
     const capImageUrl = ref(new URL('../assets/images/_DSC4674.jpg', import.meta.url).href)
@@ -1028,8 +1045,11 @@ export default {
     })
 
     onUnmounted(() => {
-      // Nettoyer le listener du clavier et la lightbox
+      // Nettoyer le listener du clavier, la lightbox et l'intervalle du diaporama
       window.removeEventListener('keydown', handleKeydown)
+      if (window.slideshowInterval) {
+        clearInterval(window.slideshowInterval)
+      }
       closeTestimonialLightbox()
     })
 
@@ -1082,6 +1102,8 @@ export default {
       getArticleImage,
       videoUrl,
       backgroundImageUrl,
+      slideshowImages,
+      currentSlideIndex,
       storyImageUrl,
       capImageUrl,
       efficaciteImageUrl,

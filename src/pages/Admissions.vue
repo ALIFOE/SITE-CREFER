@@ -140,7 +140,7 @@
             </button>
           </div>
 
-          <!-- Fiche de renseignement modulaire -->
+          <!-- Flyer Formation Modulaire 2026 -->
           <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center bg-white p-6 rounded-lg shadow hover:shadow-xl transition-all duration-300 transform hover:scale-102 group animate-fade-in-up delay-300 gap-4">
             <div class="flex items-center gap-4">
               <div class="p-3 bg-green-100 rounded-lg group-hover:bg-green-200 transition-colors">
@@ -148,16 +148,16 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                 </svg>
               </div>
-              <h3 class="text-lg font-semibold text-gray-900">Fiche de renseignement modulaire</h3>
+              <h3 class="text-lg font-semibold text-gray-900">Flyer Formation Modulaire 2026</h3>
             </div>
             <button
-              @click="downloadFile('fiche-renseignement-modulaire.pdf')"
-              :disabled="downloadingFiles['fiche-renseignement-modulaire.pdf']"
+              @click="downloadFile('flyermodul2026.pdf')"
+              :disabled="downloadingFiles['flyermodul2026.pdf']"
               class="w-full sm:w-auto px-6 py-3 bg-yellow-400 text-white rounded-lg hover:bg-yellow-500 transition-all duration-300 font-bold flex items-center justify-center gap-2 hover:shadow-lg transform hover:-translate-y-1 whitespace-nowrap disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:bg-yellow-400"
             >
-              <span v-if="!downloadingFiles['fiche-renseignement-modulaire.pdf']">Télécharger</span>
+              <span v-if="!downloadingFiles['flyermodul2026.pdf']">Télécharger</span>
               <span v-else>Téléchargement...</span>
-              <svg v-if="!downloadingFiles['fiche-renseignement-modulaire.pdf']" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg v-if="!downloadingFiles['flyermodul2026.pdf']" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
               </svg>
               <svg v-else class="w-5 h-5 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -379,7 +379,7 @@ export default {
       `${import.meta.env.BASE_URL}pdfs/fiche-inscription-modulaire.jpg`,
       `${import.meta.env.BASE_URL}pdfs/fiche-inscription-bt-cap.jpg`,
       `${import.meta.env.BASE_URL}pdfs/liste-outils-tp.jpg`,
-      `${import.meta.env.BASE_URL}pdfs/fiche-renseignement-modulaire.jpg`,
+      `${import.meta.env.BASE_URL}pdfs/flyermodul2026.jpg`,
       `${import.meta.env.BASE_URL}pdfs/fiche-renseignement-cap.jpg`,
       `${import.meta.env.BASE_URL}pdfs/fiche-renseignement-bt.jpg`
     ])
@@ -389,7 +389,7 @@ export default {
       'fiche-inscription-modulaire.pdf': false,
       'fiche-inscription-bt-cap.pdf': false,
       'liste-outils-tp.pdf': false,
-      'fiche-renseignement-modulaire.pdf': false,
+      'flyermodul2026.pdf': false,
       'fiche-renseignement-cap.pdf': false,
       'fiche-renseignement-bt.pdf': false
     })
