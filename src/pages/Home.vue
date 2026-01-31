@@ -626,6 +626,118 @@
       </div>
     </section>
 
+    <!-- Section Portes Ouvertes 2026 -->
+    <section class="section-spacing bg-gradient-to-br from-yellow-50 via-white to-yellow-50" v-scroll-animate>
+      <div class="max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Contenu Texte -->
+          <div class="animate-fade-in-up order-2 lg:order-1">
+<div class="inline-block mb-4 px-4 py-2 bg-yellow-100 rounded-full mb-6">
+            <span class="text-sm font-bold text-yellow-700 uppercase tracking-wide">📅 13 Avril 2026</span>
+          </div>
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-8" style="font-family: 'Montserrat', sans-serif; letter-spacing: -1.5px;">
+              Portes Ouvertes<br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">CREFER 2026</span>
+            </h2>
+            
+            <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+              Vous souhaitez maîtriser les métiers d'avenir à CREFER ? Profitez de la deuxième fixée au <span class="font-bold text-yellow-600">13 avril 2026</span>.
+            </p>
+
+            <!-- Filières Section -->
+            <div class="mb-10">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                <svg class="w-6 h-6 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M11.3 1.046A1 1 0 0010 2v5H4a2 2 0 00-2 2v5a2 2 0 002 2h5v5a1 1 0 001.823.567l2.94-7.86a1 1 0 00-.99-1.373H13V2a1 1 0 00-1.7-.954l-1 1.318z" />
+                </svg>
+                Filières disponibles
+              </h3>
+              
+              <div class="space-y-5">
+                <!-- SPV -->
+                <div class="bg-white/70 backdrop-blur rounded-xl p-6 border-l-4 border-yellow-400 hover:shadow-lg transition-all">
+                  <h4 class="font-bold text-lg text-gray-900 mb-3">SPV (Système Photovoltaïque)</h4>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Électricité</span>
+                    <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Énergie solaire</span>
+                    <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Biogaz</span>
+                    <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Plomberie*</span>
+                    <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Froid climatisation*</span>
+                  </div>
+                </div>
+
+                <!-- SST -->
+                <div class="bg-white/70 backdrop-blur rounded-xl p-6 border-l-4 border-yellow-600 hover:shadow-lg transition-all">
+                  <h4 class="font-bold text-lg text-gray-900 mb-3">SST (Système de Sécurité & Télécom)</h4>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Réseau</span>
+                    <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Alarmes</span>
+                    <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Caméras surveillance</span>
+                    <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Antennes paraboliques</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Infos Pratiques -->
+            <div class="space-y-4 mb-8">
+              <div class="flex gap-4 items-start">
+                <svg class="w-6 h-6 text-yellow-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                </svg>
+                <div>
+                  <p class="font-bold text-gray-900">Lieu</p>
+                  <p class="text-gray-700">L'annexe, situé au bord des pavés de Totsi non loin de l'agence Yas</p>
+                </div>
+              </div>
+              <div class="flex gap-4 items-start">
+                <svg class="w-6 h-6 text-yellow-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00-.293.707l-.707.707a1 1 0 101.414 1.414L9 9.414V6z" clip-rule="evenodd" />
+                </svg>
+                <div>
+                  <p class="font-bold text-gray-900">Horaires</p>
+                  <p class="text-gray-700">Cours du jour et du soir disponibles</p>
+                </div>
+              </div>
+              <div class="flex gap-4 items-start">
+                <svg class="w-6 h-6 text-yellow-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                </svg>
+                <div>
+                  <p class="font-bold text-gray-900">Durée</p>
+                  <p class="text-gray-700">06 ou 12 mois</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA Button -->
+            <router-link to="/admissions" class="btn-modern inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-yellow-400 to-yellow-600 text-gray-900 rounded-full font-bold text-lg hover:shadow-xl transition-all">
+              S'inscrire maintenant
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </router-link>
+          </div>
+
+          <!-- Image Gallery -->
+          <div class="grid grid-cols-2 gap-4 animate-fade-in-up order-1 lg:order-2">
+            <!-- Image Principale A4 -->
+            <div class="col-span-2 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all cursor-pointer" @click="openPortesOuvertesLightbox(portesOuvertesImagePrin)">
+              <img :src="portesOuvertesImagePrin" alt="Portes ouvertes CREFER" class="w-full object-cover hover:scale-110 transition-transform duration-500" style="aspect-ratio: 1 / 1.414;" />
+            </div>
+            <!-- Images Secondaires -->
+            <div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all cursor-pointer" @click="openPortesOuvertesLightbox(portesOuvertesImage01)">
+              <img :src="portesOuvertesImage01" alt="Formation SPV" class="w-full h-40 object-cover hover:scale-110 transition-transform duration-500" />
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all cursor-pointer" @click="openPortesOuvertesLightbox(portesOuvertesImage02)">
+              <img :src="portesOuvertesImage02" alt="Formation SST" class="w-full h-40 object-cover hover:scale-110 transition-transform duration-500" />
+            </div>
+            <div class="col-span-2 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all cursor-pointer" @click="openPortesOuvertesLightbox(portesOuvertesImage03)">
+              <img :src="portesOuvertesImage03" alt="Campus CREFER" class="w-full h-40 object-cover hover:scale-110 transition-transform duration-500" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Section Témoignages -->
     <section class="section-spacing bg-gradient-to-b from-amber-50 to-yellow-50" v-scroll-animate>
@@ -728,6 +840,27 @@
         <!-- Image Container -->
         <div class="relative max-w-2xl w-full h-auto flex flex-col justify-center items-center" @click.stop>
           <img :src="lightboxImage" alt="Témoignage" class="w-full h-auto rounded-lg object-contain" />
+          <p class="text-white text-center mt-4 text-sm">Appuyez sur ESC pour fermer</p>
+        </div>
+      </div>
+    </transition>
+
+    <!-- Lightbox Modal pour les Portes Ouvertes -->
+    <transition name="fade">
+      <div v-if="portesOuvertesLightboxOpen" class="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4" @click="closePortesOuvertesLightbox">
+        <!-- Close Button -->
+        <button
+          @click="closePortesOuvertesLightbox"
+          class="absolute top-6 right-6 text-white hover:text-yellow-400 transition-colors z-60"
+        >
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+
+        <!-- Image Container -->
+        <div class="relative max-w-4xl w-full h-auto flex flex-col justify-center items-center" @click.stop>
+          <img :src="portesOuvertesLightboxImage" alt="Portes Ouvertes" class="w-full h-auto rounded-lg object-contain" />
           <p class="text-white text-center mt-4 text-sm">Appuyez sur ESC pour fermer</p>
         </div>
       </div>
@@ -981,6 +1114,12 @@ export default {
     const partnerLogo3 = ref(new URL('../assets/images/part3.fe0f87cf.jpg', import.meta.url).href)
     const partnerLogo4 = ref(new URL('../assets/images/télécharger.jpg', import.meta.url).href)
     
+    // Images pour la section Portes Ouvertes
+    const portesOuvertesImagePrin = ref(new URL('../assets/images/imageprin01.jpeg', import.meta.url).href)
+    const portesOuvertesImage01 = ref(new URL('../assets/images/image01.jpeg', import.meta.url).href)
+    const portesOuvertesImage02 = ref(new URL('../assets/images/image02.jpeg', import.meta.url).href)
+    const portesOuvertesImage03 = ref(new URL('../assets/images/image03.jpeg', import.meta.url).href)
+    
     // Compteurs animés
     const formesCount = ref(1500)
     const emploiCount = ref(1200)
@@ -1001,10 +1140,28 @@ export default {
       lightboxOpen.value = false
       document.body.style.overflow = 'auto'
     }
+
+    // Lightbox pour la section Portes Ouvertes
+    const portesOuvertesLightboxOpen = ref(false)
+    const portesOuvertesLightboxImage = ref('')
+
+    const openPortesOuvertesLightbox = (imageUrl) => {
+      portesOuvertesLightboxImage.value = imageUrl
+      portesOuvertesLightboxOpen.value = true
+      document.body.style.overflow = 'hidden'
+    }
+
+    const closePortesOuvertesLightbox = () => {
+      portesOuvertesLightboxOpen.value = false
+      document.body.style.overflow = 'auto'
+    }
     
     const handleKeydown = (e) => {
       if (e.key === 'Escape' && lightboxOpen.value) {
         closeTestimonialLightbox()
+      }
+      if (e.key === 'Escape' && portesOuvertesLightboxOpen.value) {
+        closePortesOuvertesLightbox()
       }
     }
     
@@ -1129,7 +1286,15 @@ export default {
       lightboxOpen,
       lightboxImage,
       openTestimonialLightbox,
-      closeTestimonialLightbox
+      closeTestimonialLightbox,
+      portesOuvertesLightboxOpen,
+      portesOuvertesLightboxImage,
+      openPortesOuvertesLightbox,
+      closePortesOuvertesLightbox,
+      portesOuvertesImagePrin,
+      portesOuvertesImage01,
+      portesOuvertesImage02,
+      portesOuvertesImage03
     }
   }
 }
