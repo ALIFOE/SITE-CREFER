@@ -725,7 +725,7 @@
               <img :src="portesOuvertesImagePrin" alt="Portes ouvertes CREFER" class="w-full object-cover hover:scale-110 transition-transform duration-500" style="aspect-ratio: 1 / 1.414;" />
             </div>
             <!-- Images Secondaires -->
-            <div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all cursor-pointer" @click="openPortesOuvertesLightbox(portesOuvertesImage01)">
+            <!-- <div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all cursor-pointer" @click="openPortesOuvertesLightbox(portesOuvertesImage01)">
               <img :src="portesOuvertesImage01" alt="Formation SPV" class="w-full h-40 object-cover hover:scale-110 transition-transform duration-500" />
             </div>
             <div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all cursor-pointer" @click="openPortesOuvertesLightbox(portesOuvertesImage02)">
@@ -733,7 +733,7 @@
             </div>
             <div class="col-span-2 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all cursor-pointer" @click="openPortesOuvertesLightbox(portesOuvertesImage03)">
               <img :src="portesOuvertesImage03" alt="Campus CREFER" class="w-full h-40 object-cover hover:scale-110 transition-transform duration-500" />
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
