@@ -2,7 +2,7 @@
   <div class="min-h-screen">
     <!-- Hero Section with configurable background image -->
     <section
-      class="relative min-h-screen text-white flex items-center overflow-hidden bg-cover bg-center"
+      class="relative min-h-screen text-white flex items-center overflow-hidden bg-cover bg-center transition-all duration-1000"
       :style="{ backgroundImage: `url(${backgroundImageUrl})` }"
       v-scroll-animate
     >
@@ -626,6 +626,118 @@
       </div>
     </section>
 
+    <!-- Section Portes Ouvertes 2026 -->
+    <section class="section-spacing bg-gradient-to-br from-yellow-50 via-white to-yellow-50" v-scroll-animate>
+      <div class="max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Contenu Texte -->
+          <div class="animate-fade-in-up order-2 lg:order-1">
+<div class="inline-block mb-4 px-4 py-2 bg-yellow-100 rounded-full mb-6">
+            <span class="text-sm font-bold text-yellow-700 uppercase tracking-wide">📅 13 Avril 2026</span>
+          </div>
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-8" style="font-family: 'Montserrat', sans-serif; letter-spacing: -1.5px;">
+              Portes Ouvertes<br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">CREFER 2026</span>
+            </h2>
+            
+            <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+              Vous souhaitez maîtriser les métiers d'avenir à CREFER ? Profitez de la deuxième fixée au <span class="font-bold text-yellow-600">13 avril 2026</span>.
+            </p>
+
+            <!-- Filières Section -->
+            <div class="mb-10">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                <svg class="w-6 h-6 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M11.3 1.046A1 1 0 0010 2v5H4a2 2 0 00-2 2v5a2 2 0 002 2h5v5a1 1 0 001.823.567l2.94-7.86a1 1 0 00-.99-1.373H13V2a1 1 0 00-1.7-.954l-1 1.318z" />
+                </svg>
+                Filières disponibles
+              </h3>
+              
+              <div class="space-y-5">
+                <!-- SPV -->
+                <div class="bg-white/70 backdrop-blur rounded-xl p-6 border-l-4 border-yellow-400 hover:shadow-lg transition-all">
+                  <h4 class="font-bold text-lg text-gray-900 mb-3">SPV (Système Photovoltaïque)</h4>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Électricité</span>
+                    <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Énergie solaire</span>
+                    <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Biogaz</span>
+                    <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Plomberie*</span>
+                    <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Froid climatisation*</span>
+                  </div>
+                </div>
+
+                <!-- SST -->
+                <div class="bg-white/70 backdrop-blur rounded-xl p-6 border-l-4 border-yellow-600 hover:shadow-lg transition-all">
+                  <h4 class="font-bold text-lg text-gray-900 mb-3">SST (Système de Sécurité & Télécom)</h4>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Réseau</span>
+                    <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Alarmes</span>
+                    <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Caméras surveillance</span>
+                    <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Antennes paraboliques</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Infos Pratiques -->
+            <div class="space-y-4 mb-8">
+              <div class="flex gap-4 items-start">
+                <svg class="w-6 h-6 text-yellow-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                </svg>
+                <div>
+                  <p class="font-bold text-gray-900">Lieu</p>
+                  <p class="text-gray-700">L'annexe, situé au bord des pavés de Totsi non loin de l'agence Yas</p>
+                </div>
+              </div>
+              <div class="flex gap-4 items-start">
+                <svg class="w-6 h-6 text-yellow-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00-.293.707l-.707.707a1 1 0 101.414 1.414L9 9.414V6z" clip-rule="evenodd" />
+                </svg>
+                <div>
+                  <p class="font-bold text-gray-900">Horaires</p>
+                  <p class="text-gray-700">Cours du jour et du soir disponibles</p>
+                </div>
+              </div>
+              <div class="flex gap-4 items-start">
+                <svg class="w-6 h-6 text-yellow-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                </svg>
+                <div>
+                  <p class="font-bold text-gray-900">Durée</p>
+                  <p class="text-gray-700">06 ou 12 mois</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA Button -->
+            <router-link to="/admissions" class="btn-modern inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-yellow-400 to-yellow-600 text-gray-900 rounded-full font-bold text-lg hover:shadow-xl transition-all">
+              S'inscrire maintenant
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </router-link>
+          </div>
+
+          <!-- Image Gallery -->
+          <div class="grid grid-cols-2 gap-4 animate-fade-in-up order-1 lg:order-2">
+            <!-- Image Principale A4 -->
+            <div class="col-span-2 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all cursor-pointer" @click="openPortesOuvertesLightbox(portesOuvertesImagePrin)">
+              <img :src="portesOuvertesImagePrin" alt="Portes ouvertes CREFER" class="w-full object-cover hover:scale-110 transition-transform duration-500" style="aspect-ratio: 1 / 1.414;" />
+            </div>
+            <!-- Images Secondaires -->
+            <!-- <div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all cursor-pointer" @click="openPortesOuvertesLightbox(portesOuvertesImage01)">
+              <img :src="portesOuvertesImage01" alt="Formation SPV" class="w-full h-40 object-cover hover:scale-110 transition-transform duration-500" />
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all cursor-pointer" @click="openPortesOuvertesLightbox(portesOuvertesImage02)">
+              <img :src="portesOuvertesImage02" alt="Formation SST" class="w-full h-40 object-cover hover:scale-110 transition-transform duration-500" />
+            </div>
+            <div class="col-span-2 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all cursor-pointer" @click="openPortesOuvertesLightbox(portesOuvertesImage03)">
+              <img :src="portesOuvertesImage03" alt="Campus CREFER" class="w-full h-40 object-cover hover:scale-110 transition-transform duration-500" />
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Section Témoignages -->
     <section class="section-spacing bg-gradient-to-b from-amber-50 to-yellow-50" v-scroll-animate>
@@ -733,6 +845,27 @@
       </div>
     </transition>
 
+    <!-- Lightbox Modal pour les Portes Ouvertes -->
+    <transition name="fade">
+      <div v-if="portesOuvertesLightboxOpen" class="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4" @click="closePortesOuvertesLightbox">
+        <!-- Close Button -->
+        <button
+          @click="closePortesOuvertesLightbox"
+          class="absolute top-6 right-6 text-white hover:text-yellow-400 transition-colors z-60"
+        >
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+
+        <!-- Image Container -->
+        <div class="relative max-w-4xl w-full h-auto flex flex-col justify-center items-center" @click.stop>
+          <img :src="portesOuvertesLightboxImage" alt="Portes Ouvertes" class="w-full h-auto rounded-lg object-contain" />
+          <p class="text-white text-center mt-4 text-sm">Appuyez sur ESC pour fermer</p>
+        </div>
+      </div>
+    </transition>
+
     <!-- Section Prêt à nous rejoindre ? -->
     <section class="section-spacing bg-gradient-to-r from-yellow-600 to-white relative overflow-hidden" v-scroll-animate>
       <!-- Background decorative elements -->
@@ -794,84 +927,165 @@
     </section>
 
     <!-- About Section -->
-    <section class="section-spacing bg-gradient-to-b from-slate-100 to-gray-50" v-scroll-animate>
-      <div class="max-w-6xl mx-auto">
-        <div class="text-center mb-16 animate-fade-in-up">
-          <div class="inline-block mb-4 px-4 py-2 bg-purple-100 rounded-full">
+    <section class="section-spacing bg-gradient-to-b from-white via-slate-50 to-gray-100 relative overflow-hidden" v-scroll-animate>
+      <!-- Decorative elements -->
+      <div class="absolute top-10 right-10 w-72 h-72 bg-blue-200/20 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-96 h-96 bg-purple-200/20 rounded-full blur-3xl"></div>
+      
+      <div class="max-w-7xl mx-auto relative z-10">
+        <!-- Header -->
+        <div class="text-center mb-20 animate-fade-in-up">
+          <div class="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-gradient-to-r from-purple-100 to-blue-100 rounded-full border border-purple-200">
+            <svg class="w-5 h-5 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
             <span class="text-sm font-bold text-purple-600 uppercase tracking-wide">À propos de CREFER</span>
           </div>
-          <h2 class="text-5xl lg:text-6xl font-bold text-gray-900 mb-6" style="font-family: 'Montserrat', sans-serif; letter-spacing: -1.5px;">
-            Leader en Formation<br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Énergies Durables</span>
+          <h2 class="text-5xl lg:text-7xl font-bold text-gray-900 mb-6" style="font-family: 'Montserrat', sans-serif; letter-spacing: -1.5px;">
+            Leader en Formation<br/>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600">Énergies Durables</span>
           </h2>
-          <p class="text-xl text-gray-600 max-w-2xl mx-auto font-light">
-            Bientôt 10 ans, CREFER forme les experts de demain dans les énergies renouvelables avec des programmes innovants et reconnus internationalement.
+          <p class="text-lg text-gray-700 max-w-3xl mx-auto font-light leading-relaxed">
+            Depuis bientôt 10 ans, CREFER forme les experts de demain dans les énergies renouvelables avec des programmes innovants, reconnus internationalement et adaptés aux besoins du marché.
           </p>
         </div>
         
-        <div class="grid md:grid-cols-3 gap-8 mb-16">
-          <!-- Card 1 -->
-          <div class="card-modern rounded-2xl p-8 border-l-4 border-blue-500 animate-fade-in-up hover:shadow-2xl transition-shadow" style="animation-delay: 0.1s;">
-            <div class="icon-wrapper w-20 h-20 mb-6 bg-gradient-to-br from-blue-400 via-blue-500 to-blue-700 rounded-3xl flex items-center justify-center drop-shadow-lg">
-              <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z" />
-              </svg>
+        <!-- Features Grid -->
+        <div class="grid md:grid-cols-3 gap-8 mb-20">
+          <!-- Card 1 - Formation Qualifiante -->
+          <div class="group relative animate-fade-in-up hover:-translate-y-2 transition-all duration-500" style="animation-delay: 0.1s;">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-blue-600/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative card-modern rounded-3xl p-10 border border-blue-100/50 bg-gradient-to-br from-white to-blue-50/30 hover:shadow-2xl transition-all duration-500 h-full">
+              <!-- Icon -->
+              <div class="w-20 h-20 mb-8 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center drop-shadow-lg transform group-hover:scale-110 transition-transform duration-500">
+                <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C6.5 6.253 2 10.998 2 17s4.5 10.747 10 10.747c5.5 0 10-4.998 10-10.747 0-6.002-4.5-10.747-10-10.747z" />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4" style="font-family: 'Montserrat', sans-serif;">Formation Qualifiante</h3>
+              <p class="text-gray-700 leading-relaxed mb-6">
+                Programmes CAP, BT et modules spécialisés reconnus par l'État et les entreprises du secteur énergétique.
+              </p>
+              <div class="flex items-center gap-2 text-blue-600 font-semibold group-hover:gap-4 transition-all duration-300">
+                <span>En savoir plus</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </div>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-3" style="font-family: 'Montserrat', sans-serif;">Formation Qualifiante</h3>
-            <p class="text-gray-600 leading-relaxed">
-              Programmes CAP, BT et modules spécialisés reconnus par l'État et les entreprises du secteur énergétique.
-            </p>
           </div>
-          <!-- Card 2 -->
-          <div class="card-modern rounded-2xl p-8 border-l-4 border-yellow-500 animate-fade-in-up hover:shadow-2xl transition-shadow" style="animation-delay: 0.2s;">
-            <div class="icon-wrapper w-20 h-20 mb-6 bg-gradient-to-br from-yellow-400 via-yellow-500 to-yellow-700 rounded-3xl flex items-center justify-center drop-shadow-lg">
-              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
+
+          <!-- Card 2 - Expertise Reconnue -->
+          <div class="group relative animate-fade-in-up hover:-translate-y-2 transition-all duration-500" style="animation-delay: 0.2s;">
+            <div class="absolute inset-0 bg-gradient-to-r from-yellow-500/20 to-orange-600/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative card-modern rounded-3xl p-10 border border-yellow-100/50 bg-gradient-to-br from-white to-yellow-50/30 hover:shadow-2xl transition-all duration-500 h-full">
+              <!-- Icon -->
+              <div class="w-20 h-20 mb-8 bg-gradient-to-br from-yellow-400 to-orange-600 rounded-2xl flex items-center justify-center drop-shadow-lg transform group-hover:scale-110 transition-transform duration-500">
+                <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4" style="font-family: 'Montserrat', sans-serif;">Expertise Reconnue</h3>
+              <p class="text-gray-700 leading-relaxed mb-6">
+                Formateurs experts du secteur avec une expérience combinée de plus de 200 ans dans l'industrie énergétique.
+              </p>
+              <div class="flex items-center gap-2 text-yellow-600 font-semibold group-hover:gap-4 transition-all duration-300">
+                <span>En savoir plus</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </div>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-3" style="font-family: 'Montserrat', sans-serif;">Expertise Reconnue</h3>
-            <p class="text-gray-600 leading-relaxed">
-              Formateurs experts du secteur avec une expérience combinée de plus de 200 ans dans l'industrie énergétique.
-            </p>
           </div>
-          <!-- Card 3 -->
-          <div class="card-modern rounded-2xl p-8 border-l-4 border-green-500 animate-fade-in-up hover:shadow-2xl transition-shadow" style="animation-delay: 0.3s;">
-            <div class="icon-wrapper w-20 h-20 mb-6 bg-gradient-to-br from-green-400 via-green-500 to-green-700 rounded-3xl flex items-center justify-center drop-shadow-lg">
-              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
+
+          <!-- Card 3 - Placement Assuré -->
+          <div class="group relative animate-fade-in-up hover:-translate-y-2 transition-all duration-500" style="animation-delay: 0.3s;">
+            <div class="absolute inset-0 bg-gradient-to-r from-green-500/20 to-emerald-600/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative card-modern rounded-3xl p-10 border border-green-100/50 bg-gradient-to-br from-white to-green-50/30 hover:shadow-2xl transition-all duration-500 h-full">
+              <!-- Icon -->
+              <div class="w-20 h-20 mb-8 bg-gradient-to-br from-green-400 to-emerald-600 rounded-2xl flex items-center justify-center drop-shadow-lg transform group-hover:scale-110 transition-transform duration-500">
+                <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4" style="font-family: 'Montserrat', sans-serif;">Placement Assuré</h3>
+              <p class="text-gray-700 leading-relaxed mb-6">
+                95% de nos diplômés trouvent un emploi dans les 3 mois suivant leur graduation, avec un salaire compétitif.
+              </p>
+              <div class="flex items-center gap-2 text-green-600 font-semibold group-hover:gap-4 transition-all duration-300">
+                <span>En savoir plus</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </div>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-3" style="font-family: 'Montserrat', sans-serif;">Placement Assuré</h3>
-            <p class="text-gray-600 leading-relaxed">
-              95% de nos diplômés trouvent un emploi dans les 3 mois suivant leur graduation, avec un salaire compétitif.
-            </p>
           </div>
         </div>
 
         <!-- Statistics Grid -->
-        <div class="grid md:grid-cols-4 gap-6 mb-16">
-          <div class="card-modern rounded-2xl p-8 text-center">
-            <div class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-600 mb-2">
-              +1500
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Stat 1 -->
+          <div class="group relative animate-fade-in-up" style="animation-delay: 0.4s;">
+            <div class="absolute inset-0 bg-gradient-to-r from-yellow-500/30 to-yellow-600/30 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative card-modern rounded-2xl p-8 text-center bg-gradient-to-br from-white to-yellow-50/40 border border-yellow-100/50 hover:shadow-xl transition-all duration-500 group-hover:scale-105">
+              <div class="flex items-center justify-center w-12 h-12 rounded-full bg-yellow-100 mx-auto mb-4">
+                <svg class="w-6 h-6 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M13 7H7v6h6V7z" />
+                </svg>
+              </div>
+              <div class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-600 mb-3">
+                +1500
+              </div>
+              <p class="text-gray-700 font-semibold">Jeunes Formés</p>
             </div>
-            <p class="text-gray-600 font-semibold">Jeunes Formés</p>
           </div>
-          <div class="card-modern rounded-2xl p-8 text-center">
-            <div class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600 mb-2">
-              +1200
+
+          <!-- Stat 2 -->
+          <div class="group relative animate-fade-in-up" style="animation-delay: 0.5s;">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/30 to-blue-600/30 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative card-modern rounded-2xl p-8 text-center bg-gradient-to-br from-white to-blue-50/40 border border-blue-100/50 hover:shadow-xl transition-all duration-500 group-hover:scale-105">
+              <div class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 mx-auto mb-4">
+                <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v2h8v-2zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-2a4 4 0 00-4-4h-2.5a4 4 0 00-4 4v2h10.5z" />
+                </svg>
+              </div>
+              <div class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600 mb-3">
+                +1200
+              </div>
+              <p class="text-gray-700 font-semibold">En Emploi</p>
             </div>
-            <p class="text-gray-600 font-semibold">En Emploi</p>
           </div>
-          <div class="card-modern rounded-2xl p-8 text-center">
-            <div class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-teal-500 mb-2">
-              50
+
+          <!-- Stat 3 -->
+          <div class="group relative animate-fade-in-up" style="animation-delay: 0.6s;">
+            <div class="absolute inset-0 bg-gradient-to-r from-green-500/30 to-teal-600/30 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative card-modern rounded-2xl p-8 text-center bg-gradient-to-br from-white to-green-50/40 border border-green-100/50 hover:shadow-xl transition-all duration-500 group-hover:scale-105">
+              <div class="flex items-center justify-center w-12 h-12 rounded-full bg-green-100 mx-auto mb-4">
+                <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM9 6a3 3 0 11-6 0 3 3 0 016 0zM9 12a6 6 0 11-12 0 6 6 0 0112 0z" />
+                </svg>
+              </div>
+              <div class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-teal-500 mb-3">
+                50
+              </div>
+              <p class="text-gray-700 font-semibold">Entreprises Partenaires</p>
             </div>
-            <p class="text-gray-600 font-semibold">Entreprises Partenaires</p>
           </div>
-          <div class="card-modern rounded-2xl p-8 text-center">
-            <div class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-purple-600 mb-2">
-              6
+
+          <!-- Stat 4 -->
+          <div class="group relative animate-fade-in-up" style="animation-delay: 0.7s;">
+            <div class="absolute inset-0 bg-gradient-to-r from-purple-500/30 to-indigo-600/30 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative card-modern rounded-2xl p-8 text-center bg-gradient-to-br from-white to-purple-50/40 border border-purple-100/50 hover:shadow-xl transition-all duration-500 group-hover:scale-105">
+              <div class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-100 mx-auto mb-4">
+                <svg class="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10.5 1.5H5.75A2.25 2.25 0 003.5 3.75v12.5A2.25 2.25 0 005.75 18.5h8.5a2.25 2.25 0 002.25-2.25V6.5m-10-5v5m5-5v5m-5 0h5" />
+                </svg>
+              </div>
+              <div class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-600 mb-3">
+                6
+              </div>
+              <p class="text-gray-700 font-semibold">Programmes Certifiants</p>
             </div>
-            <p class="text-gray-600 font-semibold">Programmes Certifiants</p>
           </div>
         </div>
       </div>
@@ -941,15 +1155,32 @@ export default {
         keywords: 'formation électricité, énergie solaire, CAP, BT, école technique, Togo, énergies renouvelables, CREFER',
         canonical: 'https://crefer.tech'
       })
+      
+      // Lancer le diaporama - change l'image toutes les 5 secondes
+      const slideshowInterval = setInterval(() => {
+        currentSlideIndex.value = (currentSlideIndex.value + 1) % slideshowImages.value.length
+      }, 5000)
+      
+      // Sauvegarder l'intervalle pour le nettoyer plus tard
+      window.slideshowInterval = slideshowInterval
     })
 
     // Video URL - importée comme les images
     const videoUrl = ref(new URL('../assets/videos/video1.mp4', import.meta.url).href)
     // Image pour la section "Prêt à nous rejoindre ?"
     const joinUsImage = ref(new URL('../assets/images/_DSC4676-1200.jpg', import.meta.url).href)
+    
+    // Diaporama - Images pour le hero section
+    const slideshowImages = ref([
+      new URL('../assets/images/_DSC4881-1200.webp', import.meta.url).href,
+      new URL('../assets/images/hero1.jpg', import.meta.url).href,
+      new URL('../assets/images/exam4article.jpg', import.meta.url).href
+    ])
+    const currentSlideIndex = ref(0)
+    
     // Utilise des images locales placées dans `src/assets/images/`.
     // Remplacez les fichiers si nécessaire. Vite résout les chemins via `new URL(..., import.meta.url)`.
-    const backgroundImageUrl = ref(new URL('../assets/images/_DSC4859.jpg', import.meta.url).href)
+    const backgroundImageUrl = computed(() => slideshowImages.value[currentSlideIndex.value])
     const storyImageUrl = ref(new URL('../assets/images/histoire.jpg', import.meta.url).href)
     // Images pour les 3 cards "Programmes d'étude"
     const capImageUrl = ref(new URL('../assets/images/_DSC4674.jpg', import.meta.url).href)
@@ -963,6 +1194,12 @@ export default {
     const partnerLogo2 = ref(new URL('../assets/images/part2.e6602420.png', import.meta.url).href)
     const partnerLogo3 = ref(new URL('../assets/images/part3.fe0f87cf.jpg', import.meta.url).href)
     const partnerLogo4 = ref(new URL('../assets/images/télécharger.jpg', import.meta.url).href)
+    
+    // Images pour la section Portes Ouvertes
+    const portesOuvertesImagePrin = ref(new URL('../assets/images/imageprin01.jpeg', import.meta.url).href)
+    const portesOuvertesImage01 = ref(new URL('../assets/images/image01.jpeg', import.meta.url).href)
+    const portesOuvertesImage02 = ref(new URL('../assets/images/image02.jpeg', import.meta.url).href)
+    const portesOuvertesImage03 = ref(new URL('../assets/images/image03.jpeg', import.meta.url).href)
     
     // Compteurs animés
     const formesCount = ref(1500)
@@ -984,10 +1221,28 @@ export default {
       lightboxOpen.value = false
       document.body.style.overflow = 'auto'
     }
+
+    // Lightbox pour la section Portes Ouvertes
+    const portesOuvertesLightboxOpen = ref(false)
+    const portesOuvertesLightboxImage = ref('')
+
+    const openPortesOuvertesLightbox = (imageUrl) => {
+      portesOuvertesLightboxImage.value = imageUrl
+      portesOuvertesLightboxOpen.value = true
+      document.body.style.overflow = 'hidden'
+    }
+
+    const closePortesOuvertesLightbox = () => {
+      portesOuvertesLightboxOpen.value = false
+      document.body.style.overflow = 'auto'
+    }
     
     const handleKeydown = (e) => {
       if (e.key === 'Escape' && lightboxOpen.value) {
         closeTestimonialLightbox()
+      }
+      if (e.key === 'Escape' && portesOuvertesLightboxOpen.value) {
+        closePortesOuvertesLightbox()
       }
     }
     
@@ -1028,8 +1283,11 @@ export default {
     })
 
     onUnmounted(() => {
-      // Nettoyer le listener du clavier et la lightbox
+      // Nettoyer le listener du clavier, la lightbox et l'intervalle du diaporama
       window.removeEventListener('keydown', handleKeydown)
+      if (window.slideshowInterval) {
+        clearInterval(window.slideshowInterval)
+      }
       closeTestimonialLightbox()
     })
 
@@ -1082,6 +1340,8 @@ export default {
       getArticleImage,
       videoUrl,
       backgroundImageUrl,
+      slideshowImages,
+      currentSlideIndex,
       storyImageUrl,
       capImageUrl,
       efficaciteImageUrl,
@@ -1107,7 +1367,15 @@ export default {
       lightboxOpen,
       lightboxImage,
       openTestimonialLightbox,
-      closeTestimonialLightbox
+      closeTestimonialLightbox,
+      portesOuvertesLightboxOpen,
+      portesOuvertesLightboxImage,
+      openPortesOuvertesLightbox,
+      closePortesOuvertesLightbox,
+      portesOuvertesImagePrin,
+      portesOuvertesImage01,
+      portesOuvertesImage02,
+      portesOuvertesImage03
     }
   }
 }

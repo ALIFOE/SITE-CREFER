@@ -146,6 +146,33 @@ export default {
       const imageUrl = article.ogImage || (article.images && article.images.length > 0 ? article.images[0] : '')
       const pageUrl = `${baseUrl}/articles/${article.id}`
 
+      // Supprimer les anciennes métadonnées
+      const oldMetaSelectors = [
+        'meta[property="og:title"]',
+        'meta[property="og:description"]',
+        'meta[property="og:image"]',
+        'meta[property="og:image:width"]',
+        'meta[property="og:image:height"]',
+        'meta[property="og:type"]',
+        'meta[property="og:url"]',
+        'meta[property="og:site_name"]',
+        'meta[property="article:published_time"]',
+        'meta[property="article:author"]',
+        'meta[property="article:section"]',
+        'meta[name="twitter:card"]',
+        'meta[name="twitter:title"]',
+        'meta[name="twitter:description"]',
+        'meta[name="twitter:image"]',
+        'meta[name="description"]'
+      ]
+
+      oldMetaSelectors.forEach(selector => {
+        const element = document.querySelector(selector)
+        if (element) {
+          element.remove()
+        }
+      })
+
       // Métadonnées Open Graph (protocole Facebook)
       const metaTags = [
         { property: 'og:title', content: article.title },
@@ -165,32 +192,6 @@ export default {
         { name: 'twitter:image', content: imageUrl },
         { name: 'description', content: article.ogDescription || article.description }
       ]
-
-      // Supprimer les anciennes métadonnées
-      const oldMetaSelectors = [
-        'meta[property="og:title"]',
-        'meta[property="og:description"]',
-        'meta[property="og:image"]',
-        'meta[property="og:image:width"]',
-        'meta[property="og:image:height"]',
-        'meta[property="og:type"]',
-        'meta[property="og:url"]',
-        'meta[property="og:site_name"]',
-        'meta[property="article:published_time"]',
-        'meta[property="article:author"]',
-        'meta[property="article:section"]',
-        'meta[name="twitter:card"]',
-        'meta[name="twitter:title"]',
-        'meta[name="twitter:description"]',
-        'meta[name="twitter:image"]'
-      ]
-
-      oldMetaSelectors.forEach(selector => {
-        const element = document.querySelector(selector)
-        if (element) {
-          element.remove()
-        }
-      })
 
       // Ajouter les nouvelles métadonnées
       metaTags.forEach(tag => {
@@ -212,6 +213,9 @@ export default {
         document.head.appendChild(canonicalLink)
       }
       canonicalLink.href = pageUrl
+
+      // Mettre à jour le title du document
+      document.title = `${article.title} - CREFER`
     }
     
     const backgroundImageUrl = ref(new URL('../assets/images/imageback.jpg', import.meta.url).href)
