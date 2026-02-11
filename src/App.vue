@@ -54,7 +54,7 @@ export default {
     onMounted(() => {
       // Enregistrer le service worker pour le cache des images
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/SITE-CREFER/sw.js').catch(err => {
+        navigator.serviceWorker.register('/sw.js').catch(err => {
           console.log('SW registration failed:', err)
         })
       }
