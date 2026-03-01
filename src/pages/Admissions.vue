@@ -376,8 +376,8 @@ export default {
     
     // Galerie d'images des documents PDF convertis en JPG
     const documentsGallery = ref([
-      `${import.meta.env.BASE_URL}pdfs/fiche-inscription-modulaire.jpg`,
-      `${import.meta.env.BASE_URL}pdfs/fiche-inscription-bt-cap.jpg`,
+      // `${import.meta.env.BASE_URL}pdfs/fiche-inscription-modulaire.jpg`,
+      // `${import.meta.env.BASE_URL}pdfs/fiche-inscription-bt-cap.jpg`,
       `${import.meta.env.BASE_URL}pdfs/liste-outils-tp.jpg`,
       `${import.meta.env.BASE_URL}pdfs/flyermodul2026.jpg`,
       `${import.meta.env.BASE_URL}pdfs/fiche-renseignement-cap.jpg`,
