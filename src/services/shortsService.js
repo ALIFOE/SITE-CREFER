@@ -1,6 +1,7 @@
-import { directus } from './directus';
-import { readItems } from '@directus/sdk';
-import { ref } from 'vue';
+import {directus} from './directus';
+import {readItems, readCollections} from '@directus/sdk';
+import {ref} from 'vue';
+import {createRouter as logs} from "vue-router";
 
 export const useShorts = () => {
   const shorts = ref([]);
@@ -29,16 +30,29 @@ export const useShorts = () => {
   const fetchShorts = async () => {
     loading.value = true;
     try {
-      // Assuming 'shorts' collection in Directus
-      const response = await directus.request(readItems('Shorts', {
-          sort: ['-date_created'], // Using date_created for sorting as ID is a UUID
-          filter: {
-            status: {
-              _eq: 'published'
-            }
+      // Find the collection name (case-insensitive) as done in test-shorts-collection.js
+      const collections = await directus.request(readCollections());
+
+      console.log('Collections:', collections);
+
+      const shortsCollection = collections.find(c => c.collection.toLowerCase() === 'shorts');
+      
+      const collectionName = shortsCollection ? shortsCollection.collection : 'shorts';
+
+      // Request items from the correctly identified collection
+      const response = await directus.request(readItems(collectionName, {
+        filter: {
+          status: {
+            _eq: 'published'
           }
+        }
       }));
-      shorts.value = response;
+      
+      // Map 'titre' from Directus to 'title' for the frontend as verified in the test script
+      shorts.value = response.map(item => ({
+        ...item,
+        title: item.titre || item.title
+      }));
     } catch (err) {
       console.error('Error fetching shorts from Directus:', err);
       error.value = err;

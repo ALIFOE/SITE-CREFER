@@ -11,11 +11,19 @@ export default defineConfig({
     }
   },
   server: {
+    host: true,
+    port: 5173,
+    strictPort: true,
+    hmr: {
+      host: 'localhost',
+      port: 5173
+    },
     headers: {
       'Cache-Control': 'public, max-age=31536000, immutable'
     }
   },
   build: {
+    target: 'esnext',
     assetsInlineLimit: 4096,
     minify: 'terser',
     terserOptions: {
