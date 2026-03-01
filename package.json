@@ -10,6 +10,8 @@
     "optimize:images": "node ./scripts/optimize-images.js"
   },
   "dependencies": {
+    "@directus/sdk": "^21.1.0",
+    "@tanstack/vue-query": "^5.92.9",
     "vue": "^3.3.4",
     "vue-router": "^4.6.3"
   },

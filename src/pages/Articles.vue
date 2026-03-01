@@ -77,7 +77,16 @@
         </div>
 
         <!-- Shorts Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div v-if="shortsLoading" class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div v-for="i in 4" :key="i" class="animate-pulse bg-white rounded-xl shadow-md h-[500px]">
+            <div class="bg-gray-200 w-full aspect-[9/16] rounded-t-xl"></div>
+            <div class="p-4 space-y-3">
+              <div class="h-4 bg-gray-200 rounded w-3/4"></div>
+              <div class="h-4 bg-gray-200 rounded w-1/2"></div>
+            </div>
+          </div>
+        </div>
+        <div v-else class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div v-for="short in shorts" :key="short.id" class="group overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 bg-white">
             <!-- Short Container -->
             <div class="w-full aspect-[9/16] bg-black overflow-hidden rounded-t-xl">
@@ -342,6 +351,7 @@
 <script>
 import { ref, onMounted } from 'vue'
 import { useVideos, getEmbedUrl } from '../services/videosService'
+import { useShorts } from '../services/shortsService'
 import { useSEO } from '@/composables/useSEO'
 import { articlesData } from '@/data/articlesData'
 
@@ -350,8 +360,9 @@ export default {
   setup() {
     const seo = useSEO()
     const { videos } = useVideos()
+    const { shorts, loading: shortsLoading, fetchShorts } = useShorts()
     
-    onMounted(() => {
+    onMounted(async () => {
       // Configurer le SEO
       seo.setSEO({
         title: 'Actualités et Projets - CREFER',
@@ -359,26 +370,10 @@ export default {
         keywords: 'actualités CREFER, projets école, événements formation, news CREFER, vidéos CREFER',
         canonical: 'https://crefer.tech/articles'
       })
-    })
 
-    // Shorts data
-    const shorts = ref([
-      {
-        id: 1,
-        youtubeId: 'QCx-BY9Ciz8',
-        title: 'Regardez la vidéo et dites-nous ce que vous en pensez en commentaires ⬇️ #Apprentissage #Continue'
-      },
-      {
-        id: 2,
-        youtubeId: 'gcjje_T9suM',
-        title: 'Chaque réussite est le fruit d\'un rêve nourri par la discipline et l\'effort. #CREFER 🇹🇬'
-      },
-      {
-        id: 3,
-        youtubeId: 'J1xR0FdaOBw',
-        title: 'De la salle de cours à l’atelier !'
-      }
-    ])
+      // Fetch shorts from Directus
+      await fetchShorts()
+    })
     
     const backgroundImageUrl = ref(new URL('../assets/images/imageback.jpg', import.meta.url).href)
     const soutenanceImageUrl = ref(new URL('../assets/images/soutenance-1200.jpg', import.meta.url).href)
@@ -539,6 +534,7 @@ export default {
       closeExamLightbox,
       videos,
       shorts,
+      shortsLoading,
       getEmbedUrl,
       shareArticle,
     }
