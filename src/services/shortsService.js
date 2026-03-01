@@ -1,4 +1,4 @@
-import {directus} from './directus';
+import directus from './directus';
 import {readItems, readCollections} from '@directus/sdk';
 import {ref} from 'vue';
 import {createRouter as logs} from "vue-router";
@@ -32,8 +32,6 @@ export const useShorts = () => {
     try {
       // Find the collection name (case-insensitive) as done in test-shorts-collection.js
       const collections = await directus.request(readCollections());
-
-      console.log('Collections:', collections);
 
       const shortsCollection = collections.find(c => c.collection.toLowerCase() === 'shorts');
       
