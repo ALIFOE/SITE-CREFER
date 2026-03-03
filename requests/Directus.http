@@ -1,0 +1,34 @@
+@baseUrl = https://admin-direct.crefer.tech
+@token = uTrjGh8NVqCjL52DnIznN37RJEf-wulT
+
+### Get Current User Info (Me)
+GET {{baseUrl}}/users/me
+Authorization: Bearer {{token}}
+
+###
+
+### List All Collections
+GET {{baseUrl}}/collections
+Authorization: Bearer {{token}}
+
+###
+
+### Get Shorts Collection Items
+# This endpoint assumes the collection name is 'shorts'
+GET {{baseUrl}}/items/shorts?filter[status][_eq]=published
+Authorization: Bearer {{token}}
+
+###
+
+### Get Articles Collection Items
+# This is a speculative endpoint based on the project structure
+GET {{baseUrl}}/items/articles?filter[status][_eq]=published
+Authorization: Bearer {{token}}
+
+###
+
+### Get Fields for Shorts Collection
+GET {{baseUrl}}/fields/shorts
+Authorization: Bearer {{token}}
+
+###
