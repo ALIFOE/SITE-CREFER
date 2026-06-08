@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Article extends Model
+{
+    protected $fillable = ['title', 'category', 'date', 'description', 'full_content', 'main_image'];
+
+    public function images()
+    {
+        return $this->hasMany(ArticleImage::class)->orderBy('position');
+    }
+}
